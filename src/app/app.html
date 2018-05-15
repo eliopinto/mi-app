@@ -1,0 +1,19 @@
+<ion-menu [content]="NAV">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title></ion-title>
+        <img src="/assets/imgs/logo-Codemif-1.jpg">
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+        <button ion-item *ngFor="let page of pages" (click)="gotopage(page.component)" menuClose>
+         <ion-icon item-left name="{{page.icon}}"></ion-icon>
+         
+         {{page.titulo}}
+        </button>
+        
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+<ion-nav #NAV [root]="rootPage"></ion-nav>

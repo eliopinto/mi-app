@@ -1,0 +1,29 @@
+<!--
+  Generated template for the ArticulosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Blog Codemif</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let titular of titulares">
+     
+      <ion-thumbnail item-start>
+        <img src="{{ titular.imagen }}">
+      </ion-thumbnail>
+      <h2>{{ titular.titulo }}</h2><br>
+      {{ titular.resumen }}
+      <button ion-button clear item-end (click)="openWithSystemBrowser( titular.direccion)">Leer Más
+</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
