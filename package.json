@@ -31,6 +31,7 @@
     "cordova-android": "^7.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-inappbrowser": "^3.0.0",
+    "cordova-plugin-ionic": "^4.1.7",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -41,6 +42,7 @@
     "promise-polyfill": "^7.1.2",
     "rxjs": "5.5.8",
     "sw-toolbox": "3.6.0",
+    "variable": "0.0.3",
     "zone.js": "0.8.20"
   },
   "devDependencies": {
@@ -55,7 +57,15 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "712e4199",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background",
+        "WARN_DEBUG": "true",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
+      }
     },
     "platforms": [
       "android"
