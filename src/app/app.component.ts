@@ -7,6 +7,7 @@ import { DocumentosPage } from '../pages/documentos/documentos';
 import { TransmisionesPage } from '../pages/transmisiones/transmisiones';
 import { VideosPage } from '../pages/videos/videos';
 import { ConveniosPage } from '../pages/convenios/convenios';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -33,6 +34,7 @@ public pages: Array< {titulo: string, component:any, icon:string }>;
       statusBar.styleDefault();
       splashScreen.hide();
     });
+    
   }
   gotopage(page) {
     this.nav.setRoot(page);
